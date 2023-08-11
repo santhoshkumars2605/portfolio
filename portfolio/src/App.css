@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Marko+One&family=RocknRoll+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap'); */
 
 *{
   margin: 0;
@@ -59,7 +59,7 @@ video{
 .navbar a {
   text-decoration: none;
   color: white;
-  font-size: 23px;
+  font-size: 15px;
 }
 
 .navbar li :hover{
@@ -83,6 +83,23 @@ video{
   font-family: 'Marko One', serif;
   font-family: 'RocknRoll One', sans-serif;
 }
-.content .navbar{
-  font-family: 'Mouse Memoirs', sans-serif;
+.mainskills  h2{
+  font-family: 'Marko One', serif;
+  font-family: 'RocknRoll One', sans-serif;
+}
+.container{
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.cont{
+  border:2px solid white;
+  width: 100px;
+  height: 120px;
+  border-radius: 5px;
+}
+.pic{
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 5 images per row */
+  gap: 10px; /* Add gap for spacing between images */
 }

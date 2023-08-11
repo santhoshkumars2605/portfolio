@@ -1,0 +1,57 @@
+/* Skills.css */
+
+.skillcont{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* On small screens, display 2 skills per row */
+    gap: 30px; /* Adjust the gap for spacing between skills */
+    justify-content: center; /* Center the skills horizontally */
+  }
+  
+  @media (min-width: 576px) {
+    /* For screens wider than 576px (small to medium screens) */
+    .skills-container {
+      grid-template-columns: repeat(3, 1fr); /* Display 3 skills per row */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* For screens wider than 768px (medium to large screens) */
+    .skills-container {
+      grid-template-columns: repeat(4, 1fr); /* Display 4 skills per row */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    /* For screens wider than 992px (large screens) */
+    .skills-container {
+      grid-template-columns: repeat(5, 1fr); /* Display 5 skills per row */
+    }
+  }
+  
+  .skill {
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; /* Add transitions on hover */
+  }
+  
+  .skill:hover {
+    transform: scale(1.1); /* Increase the size of the skill on hover */
+    box-shadow: 0 4px 8px rgba(255, 196, 0, 0.781); /* Add a subtle shadow effect on hover */
+  }
+  
+  .skill-image {
+    width: 60px; /* Adjust the width and height to your desired image size */
+    height: 60px;
+    border-radius: 50%; /* Make the image circular, you can remove this if not desired */
+  }
+  
+  .skill-name {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  

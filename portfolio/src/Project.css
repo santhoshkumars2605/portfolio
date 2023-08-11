@@ -1,0 +1,76 @@
+
+/* CSS to display two cards in a row for laptops */
+.app {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px; /* Adjust the gap between cards as needed */
+}
+.color{
+  background-color: rgb(0, 0, 0);
+}
+.projects{
+  background-color: aqua;
+}
+.app{
+  margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .app {
+    grid-template-columns: repeat(1, 1fr); /* Show 1 card per row for mobile devices */
+  }
+}
+.app{
+  margin-left: 30px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 200px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #ffe600;
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+}
+.flip-card-back .btn1{
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: bisque;
+}
+.flip-card-back .btn2{
+  border: 2px solid black;
+  margin-left:5%;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: bisque;
+}
